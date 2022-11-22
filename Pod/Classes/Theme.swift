@@ -336,6 +336,24 @@ open class Theme {
                 return RPColor(red: 0, green: 1, blue: 0, alpha: 1)
             case "blue":
                 return RPColor(red: 0, green: 0, blue: 1, alpha: 1)
+            case "primary":
+                #if os(iOS) || os(tvOS)
+                return RPColor.labelColor
+                #else
+                return RPColor.textColor
+                #endif
+            case "secondary":
+                #if os(iOS) || os(tvOS)
+                return RPColor.secondaryLabelColor
+                #else
+                return RPColor.secondaryLabelColor
+                #endif
+            case "tertiary":
+                #if os(iOS) || os(tvOS)
+                return RPColor.tertiaryLabelColor
+                #else
+                return RPColor.tertiaryLabelColor
+                #endif
             default:
                 return RPColor.gray
             }
