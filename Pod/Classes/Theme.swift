@@ -354,6 +354,12 @@ open class Theme {
                 #else
                 return RPColor.tertiaryLabelColor
                 #endif
+            case "quaternary":
+                #if os(iOS) || os(tvOS)
+                return RPColor.quaternaryLabelColor
+                #else
+                return RPColor.quaternaryLabelColor
+                #endif
             default:
                 return RPColor.gray
             }
