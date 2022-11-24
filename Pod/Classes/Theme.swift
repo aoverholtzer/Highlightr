@@ -338,25 +338,25 @@ open class Theme {
                 return RPColor(red: 0, green: 0, blue: 1, alpha: 1)
             case "primary":
                 #if os(iOS) || os(tvOS)
-                return RPColor.labelColor
+                return RPColor.label
                 #else
                 return RPColor.textColor
                 #endif
             case "secondary":
                 #if os(iOS) || os(tvOS)
-                return RPColor.secondaryLabelColor
+                return RPColor.secondaryLabel
                 #else
                 return RPColor.secondaryLabelColor
                 #endif
             case "tertiary":
                 #if os(iOS) || os(tvOS)
-                return RPColor.tertiaryLabelColor
+                return RPColor.tertiaryLabel
                 #else
                 return RPColor.tertiaryLabelColor
                 #endif
             case "quaternary":
                 #if os(iOS) || os(tvOS)
-                return RPColor.quaternaryLabelColor
+                return RPColor.quaternaryLabel
                 #else
                 return RPColor.quaternaryLabelColor
                 #endif
